@@ -7,7 +7,7 @@ def prCyan(skk): print("\033[96m {}\033[00m" .format(skk))
 def prLightGray(skk): print("\033[97m {}\033[00m" .format(skk))
 def prBlack(skk): print("\033[98m {}\033[00m" .format(skk))
 
-prRed("\n*** Termmux Converter (Version:1.0) ***")
+prRed("\n*** Termmux Converter (Version:1.2) ***")
 prGreen("\n*** Developed by Pavithran && Lalith ***")
 print("\nAvailable Converters...")
 print("\n[01]. Length\n[02]. Mass\n[03]. Volume\n[04]. Temperature")
@@ -27,6 +27,7 @@ if start == 1:
     print("\n[10]. Yards(yd) to Meters(m)")
     print("\n[11]. Yards(yd) to Kilometers(km)")
     print("\n[12]. Miles(m) to Kilometers(km)")
+    print("\n[13]. Millimeter(mm) to Centimeter(cm)")
     choice = int(input("\nEnter your Choice:"))
     if choice == 1:
         a = float(input("\nKilometer(km):"))
@@ -73,10 +74,14 @@ if start == 1:
         b = a*0.00091
         prGreen("\n%0.2f Kilometers(km)"%b)
     if choice == 12:
-        a = float(input("\nMiles:"))
+        a = float(input("\nMiles(mi):"))
         b = a*1.61
         prGreen("\n%0.2f Kilometers(km)"%b)
-    if choice > 12:
+    if choice == 13:
+        a = float(input("\nMillimeter(mm):"))
+        b = a*10
+        prGreen("\n%0.2f Centimeters(cm)"%b)
+    if choice > 13:
         prRed("\nInvalid Choice...Please Try Again...")
     if choice == 9:
         prRed("\nInvalid Choice...Please Try Again...")
