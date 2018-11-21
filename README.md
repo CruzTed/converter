@@ -1,8 +1,10 @@
 # Converter
-$ apt update<br>
-$ apt upgrade<br>
-$ apt install python<br>
-$ apt install git<br>
-$ git clone https://github.com/Pavithran-R/Converter<br>
-$ cd Converter<br>
+```
+$ apt update
+$ apt upgrade
+$ apt install python
+$ apt install git
+$ git clone https://github.com/Pavithran-R/Converter
+$ cd Converter
 $ python converter.py
+```
